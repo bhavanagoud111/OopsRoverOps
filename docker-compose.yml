@@ -1,0 +1,31 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: roverops-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: roverops_root_password
+      MYSQL_DATABASE: roverops_db
+      MYSQL_USER: roverops_user
+      MYSQL_PASSWORD: roverops_password
+    ports:
+      - "3307:3306"  # Use 3307 on host to avoid conflict with other MySQL instances
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./backend/database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proverops_root_password"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - roverops-network
+
+volumes:
+  mysql_data:
+    driver: local
+
+networks:
+  roverops-network:
+    driver: bridge
+

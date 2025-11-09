@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(lsof:*)",
+      "Bash(curl:*)",
+      "Bash(bash -c 'source venv/bin/activate && python /tmp/test_mission.py')",
+      "Bash(bash -c 'source venv/bin/activate && python /tmp/test_full_mission.py')",
+      "Bash(bash -c 'source venv/bin/activate && timeout 30 python /tmp/test_mission.py')",
+      "Bash(python -m json.tool:*)",
+      "Bash(cat:*)",
+      "Bash(source:*)",
+      "Bash(python:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
