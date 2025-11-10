@@ -1,4 +1,4 @@
-# Rover Ops - AI-Orchestrated Mission Control Simulator
+# OopsRoverOps - AI-Orchestrated Mission Control Simulator
 
 A web-based mission control simulator that uses AI agents to plan, execute, monitor, and report on simulated Mars rover missions using real NASA data.
 
