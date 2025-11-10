@@ -99,7 +99,7 @@ npm run dev
 ## Project Structure
 
 ```
-Tigerhacks/
+hackathon/
 ├── backend/
 │   ├── app/
 │   │   ├── agents/          # AI agents (Planner, Rover, Safety, Reporter)
