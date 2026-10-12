@@ -21,8 +21,8 @@
 - **Vite Dev Server:** ✅ Running (v5.4.0)
 
 ### 3. ✅ API Configuration
-- **NASA API Key:** ✅ Loaded correctly (`oYAHwEYGqv2gIGEdNZwe...`)
-- **OpenRouter API Key:** ✅ Loaded correctly (`sk-or-v1-467b87ff...`)
+- **NASA API Key:** ✅ Loaded correctly
+- **OpenRouter API Key:** ✅ Loaded correctly
 - **Environment Variables:** ✅ All configured
 
 ### 4. ✅ Mission API Endpoints
