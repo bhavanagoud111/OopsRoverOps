@@ -175,9 +175,9 @@ The `PlannerAgent` has coordinate extraction and override logic, but it's not wo
 
 **Backend `.env` file:**
 ```
-OPENROUTER_API_KEY=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
+OPENROUTER_API_KEY=your-openrouter-api-key
 OPENROUTER_MODEL=openai/gpt-4o
-NASA_API_KEY=oYAHwEYGqv2gIGEdNZwe4ax1neNTA2FdTd3O2z92
+NASA_API_KEY=your-nasa-api-key
 BACKEND_PORT=8000
 ```
 
