@@ -23,7 +23,7 @@ class BaseAgent:
         # First ensure .env is loaded (in case called before main.py)
         load_dotenv()
         # API key from backend/.env file
-        api_key = os.getenv("OPENROUTER_API_KEY") or "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"
+        api_key = os.getenv("OPENROUTER_API_KEY")
         if not api_key:
             raise ValueError("OPENROUTER_API_KEY not found. Please check backend/.env file.")
         
