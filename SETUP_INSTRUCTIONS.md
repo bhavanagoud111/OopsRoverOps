@@ -167,10 +167,6 @@ This will verify that all AI agents are working correctly.
 2. Deploy the `dist` folder
 3. Update API URL in production environment variables
 
-## License
-
-This project is provided as-is for educational and demonstration purposes.
-
 ## Support
 
 For issues or questions, check the `AGENT_FUNCTIONALITY.md` file in the backend directory for detailed agent documentation.
